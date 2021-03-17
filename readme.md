@@ -1,1 +1,1 @@
-![status]https://github-readme-stats.vercel.app/api?username=Soju06
+![status](https://github-readme-stats.vercel.app/api?username=Soju06)
