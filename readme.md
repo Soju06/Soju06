@@ -5,6 +5,7 @@
   ![main-repos-numc](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=NUMC&theme=dracula)
   ![main-repos-open-vpn-net](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=OpenVPN.Net&theme=dracula)
   ![main-repos-waifu2x-ncnn-vulkan-gui](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=waifu2x-ncnn-vulkan-gui&theme=dracula)
+  ![main-repos-minecraft-aimless-survival-plugin](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=minecraft-aimless-survival-plugin&theme=dracula)
   ***
   ![top-lang](https://github-readme-stats.vercel.app/api/top-langs/?username=Soju06&layout=compact&theme=dracula)
 </div>
