@@ -6,7 +6,8 @@
 		<title>Soju Studio</title>
         
         <!-- css -->
-        <link rel="stylesheet" href="src/css/main.css">
+        <link rel="stylesheet" href="app/main/main.base.css">
+        <link rel="stylesheet" href="app/main/main.css">
 		<link rel="stylesheet" href="src/vender/css/vmodal.css">
         
         <!-- scripts -->
@@ -48,28 +49,28 @@
                 <h1 id="logo"><a href="#banner">Soju06</a></h1>
                 <nav id="nav">
                     <ul>
-                        <li style="white-space: nowrap;">
-                            <a href="#numc" class="scrolly button">Numc</a>
+                        <li><a class="nav-f">Project [</a></li>
+                        <li>
+                            <input id="numc-tab-button" type="radio" name="tabs" checked="">
+                            <a href="#numc" class="scrolly">NUMC</a>
                         </li>
-                        <!-- <li style="white-space: nowrap;">
-                            <a href="#w2" class="scrolly">w2</a>
-                        </li>
-                        <li style="white-space: nowrap;">
-                            <a href="#w3" class="button m1 scrolly">w3</a>
-                        </li> -->
+                        <li><a class="nav-f">]</a></li>
                     </ul>
                 </nav>
             </header>
 
 			<!-- Banner -->
             <div id="banner">
+                <div id="banner-background-box" class="background-video">
+                    <iframe id="banner-background-video" onload="setTimeout(() => document.getElementsByClassName('ytp-large-play-button ytp-button')[0]?.click(), 1000)" title="video" src="https://www.youtube.com/embed/ODiEy2ClWNw?start=16&vq=medium&autoplay=1&playlist=ODiEy2ClWNw&loop=1&mute=1&fs=0&color=white&controls=0&disablekb=1" width="100%" height="100%"></iframe>
+                </div>
                 <div class="content">
                     <svg id="title" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4262.44 811"><defs><style>.cls-1{fill:none;stroke:rgb(238, 76, 131);stroke-linecap:round;stroke-linejoin:round;stroke-width:10px;}</style></defs><path class="cls-1" d="M173.28,524.75H282.5a142.17,142.17,0,0,0,36-4.5,83.14,83.14,0,0,0,29.62-13.87A70.15,70.15,0,0,0,368,482.75q7.49-14.24,7.5-33.75,0-36.74-24-57t-60-20.25H215.75q-48,0-87-10.5t-66.37-33Q35,305.75,20,270.12T5,185a195.14,195.14,0,0,1,12-67.88A180,180,0,0,1,50.75,59.75,165.85,165.85,0,0,1,103.25,20Q134,5,171.5,5h6M167.28,643.25h-142V524.75h148m69.56-277.5H306.5q39.75,0,73.88,15a174,174,0,0,1,58.87,42q24.75,27,38.63,64.13T491.75,449q0,41.25-12.75,76.88t-36,61.5a170.69,170.69,0,0,1-55.5,40.87q-32.25,15-71.25,15h-149M326,129.5H220.25a247.12,247.12,0,0,0-34.13,2.25A84.33,84.33,0,0,0,158,140.38a45.81,45.81,0,0,0-18.75,18.37q-6.75,12-6.75,32.25,0,24,15.75,40.12t43.5,16.13h51.09M177.5,5h258V129.5H326"/><path class="cls-1" d="M548.74,353.73V340.25q0-39.75,12-72t34.88-54.75q22.86-22.5,55.5-34.88t73.12-12.37h38.25q41.24,0,73.88,12.37t55.5,34.88q22.86,22.5,34.87,54.75t12,72V468.5q0,39.76-12,72t-34.87,55.12Q869,618.5,836.37,630.88t-73.88,12.37H724.24q-40.5,0-73.12-12.37t-55.5-35.26q-22.89-22.87-34.88-55.12t-12-72V353.73m106.5,82.38V465.5q0,30.76,19.88,50.25t49.12,19.5h38.25q30,0,49.5-19.5t19.5-50.25V343.25q0-30.75-19.5-50.25t-49.5-19.5H724.24q-29.25,0-49.12,19.5t-19.88,50.25v92.86"/><path class="cls-1" d="M1115.73,541.29V632q0,39.75-10.12,72t-31.5,54.75q-21.37,22.5-54.75,34.87T939.48,806H920V705.5h19.5q32.25,0,50.25-19.5t18-50.25V282.92m0,0V166.25h108v375m-105-485V5h103.5V114.5h-103.5V56.25"/><path class="cls-1" d="M1483.23,251.51V166.25h109.5v477h-109.5v-12a178.26,178.26,0,0,1-33,9,215.57,215.57,0,0,1-36.75,3h-48q-42,0-73.5-14.25t-52.13-37.12a155.67,155.67,0,0,1-31.12-52.13,176,176,0,0,1-10.5-60V321.44M1307,185.14V458a169.77,169.77,0,0,0,2.62,30.75,53.55,53.55,0,0,0,11.25,24.75q8.63,10.51,23.63,16.5t39.75,6h21q23.24,0,37.87-5.25t23.63-15a52.34,52.34,0,0,0,12.37-22.87,141,141,0,0,0,4.13-28.13V251.51m-285,69.93V166.25H1307v18.89"/><path class="cls-1" d="M2010,524.75h164.7a142.17,142.17,0,0,0,36-4.5,83.27,83.27,0,0,0,29.63-13.87,70.24,70.24,0,0,0,19.87-23.63q7.49-14.24,7.5-33.75,0-36.74-24-57t-60-20.25H2108q-48,0-87-10.5t-66.37-33q-27.39-22.5-42.38-58.13t-15-85.12a195.14,195.14,0,0,1,12-67.88A180,180,0,0,1,1943,59.75,165.85,165.85,0,0,1,1995.47,20q30.75-15,68.25-15h85.86m-9,242.25h58.12q39.75,0,73.88,15a174,174,0,0,1,58.87,42q24.75,27,38.63,64.13T2384,449q0,41.25-12.75,76.88t-36,61.5a170.69,170.69,0,0,1-55.5,40.87q-32.25,15-71.25,15h-291V524.75H2010M2149.58,5h178.14V129.5H2112.47a246.87,246.87,0,0,0-34.12,2.25,84.32,84.32,0,0,0-28.13,8.63,45.81,45.81,0,0,0-18.75,18.37q-6.75,12-6.75,32.25,0,24,15.75,40.12t43.5,16.13h56.63"/><path class="cls-1" d="M2519,387.07V273.5h-88.5V166.25H2519V64.4m110.25,456V643.25H2519V387.07M2629.21,97.29v69h88.5V273.5h-88.5V520.4M2519,64.4V5h110.25V97.29"/><path class="cls-1" d="M3057.46,215.36V166.25H3167v477h-109.5v-12a178.48,178.48,0,0,1-33,9,215.65,215.65,0,0,1-36.75,3h-48q-42,0-73.5-14.25t-52.13-37.12A155.34,155.34,0,0,1,2783,539.75a176,176,0,0,1-10.5-60V229m108.75,175.38V458a168.88,168.88,0,0,0,2.62,30.75,53.55,53.55,0,0,0,11.25,24.75q8.61,10.51,23.63,16.5t39.75,6h21q23.23,0,37.87-5.25t23.63-15a52.34,52.34,0,0,0,12.37-22.87,141.74,141.74,0,0,0,4.13-28.13V215.36m-285,13.63V166.25h108.75V404.37"/><path class="cls-1" d="M3620,95.66V643.25h-214.5q-40.5,0-73.13-12.37t-55.5-35.26q-22.89-22.87-34.87-55.12t-12-72V340.25q0-39.75,12-72t34.87-54.75q22.88-22.5,55.5-34.88t73.13-12.37h38.25q39,0,70.5,11.25V5H3620V95.66M3514.21,466V343.25q0-30.75-20.25-50.25t-50.25-19.5h-38.25q-30,0-51,19.5t-21,50.25V465.5q0,30.76,21,50.25t51,19.5h108.75V466"/><path class="cls-1" d="M3799.2,114.5H3689V5H3799.2ZM3689,242.62V166.25H3799.2v477H3689V242.62"/><path class="cls-1" d="M3867.44,442.62V340.25q0-39.75,12-72t34.87-54.75q22.88-22.5,55.5-34.88t73.13-12.37h38.25q41.24,0,73.87,12.37t55.5,34.88q22.88,22.5,34.88,54.75t12,72V468.5q0,39.76-12,72t-34.88,55.12q-22.89,22.88-55.5,35.26t-73.87,12.37h-38.25q-40.5,0-73.13-12.37t-55.5-35.26q-22.89-22.87-34.87-55.12t-12-72V442.62m106.5-37.87V465.5q0,30.76,19.87,50.25t49.13,19.5h38.25q30,0,49.5-19.5t19.5-50.25V343.25q0-30.75-19.5-50.25t-49.5-19.5h-38.25q-29.25,0-49.13,19.5t-19.87,50.25v61.5"/></svg>
                     <br>
                     <header style="text-align: center;">
                         <h2>Soju Studio는</h2>
                         <p><b id="banner_date">2017</b>년부터 시작된 스튜디오</p>
-                        <p>현재 총 개발자는 <b>1명</b></p>
+                        <p>현재 총 개발자는 <b>2명</b></p>
                         <br>
                         <h4>소주는 팀원이 필요해요</h4>
                         <p>이런 개발자 친구가 없어요...</p>
@@ -77,10 +78,10 @@
                         <br>
                         <ul class="actions fit small">
                             <li>
-                                <a href="#sorry" rel="modal:open" class="button fit small">더 알아보기</a>
+                                <a href="https://github.com/Soju-Network" class="button fit small">더 알아보기</a>
                             </li>
                             <li>
-                                <a href="#sorry" rel="modal:open" class="button fit m2 small">팀원이 되기</a>
+                                <a href="https://github.com/Soju-Network" class="button fit m2 small">팀원이 되기</a>
                             </li>
                         </ul>
                     </header>
@@ -92,11 +93,11 @@
 			<!-- numc -->
             <div id="numc" class="spotlight m2 left" style="background-position: center 731.25px;" onclick="$('#asdd').click();">
                 <span class="image fit main bottom">
-                    <img src="src/svg/NUMC.svg" alt="">
+                    <img src="app/main/img/NUMC.svg" alt="">
                 </span>
                 <div class="content">
                     <header>
-                        <h2><b>Numc</b></h2>
+                        <h2><b>NUMC</b> <a style="color:#dfdfdf;font-weight:400;font-size:22px;" id="numc_download_label">loading...</a></h2>
                         <p>강력한 키보드 커스텀마이징 도구</p>
                     </header>
                     <p>키보드 레이아웃을 변경하거나 키의 기능 수정하여</p>
@@ -104,11 +105,11 @@
                     <br>
                     <ul class="actions">
                         <li>
-                            <a href="#sorry" rel="modal:open" class="button m2">더 알아보기</a>
+                            <a href="https://github.com/Soju06/NUMC" class="button m2">더 알아보기</a>
                         </li>
                         <li>
-                            <a id="numc_download" class="button m2">
-                                <img src="src/svg/windows.svg" alt="" />
+                            <a id="numc_download_button" class="button m2">
+                                <img src="app/main/img/windows.svg" alt="" />
                                 Windows Download
                             </a>
                         </li>
@@ -128,7 +129,7 @@
                 </ul> -->
                 <ul class="copyright">
                     <li>
-                        <a href="https://soju06.tistory.com/">Blog</a>
+                        <a href="https://blog.soju06.com/">Blog</a>
                     </li>
                     <li>
                         <a href="https://github.com/Soju06">GitHub</a>
@@ -190,8 +191,9 @@
         <script src="src/vender/js/breakpoints.min.js" type="text/javascript"></script>
         <script src="src/vender/js/vutils.min.js" type="text/javascript"></script>
         <script src="src/vender/js/vmain.js" type="text/javascript"></script>
-        <script src="src/js/numc-api.js" type="text/javascript"></script>
-        <script src="src/js/random-wallpaper.js" type="text/javascript"></script>
-        <script src="src/js/main.js" type="text/javascript"></script>
+        <script src="app/project/api/numc-api.js" type="text/javascript"></script>
+        <!-- <script src="src/js/random-wallpaper.js" type="text/javascript"></script> -->
+        <script src="src/js/video-autoresize.js" type="text/javascript"></script>
+        <script src="app/main/main.js" type="text/javascript"></script>
     </body>
 </html>

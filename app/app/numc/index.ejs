@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<title>Soju Studio</title>
+        
+        <!-- css -->
+        <link rel="stylesheet" href="../main/main.base.css">
+        <link rel="stylesheet" href="../main/main.css">
+        <link rel="stylesheet" href="../app/app.css">
+		<link rel="stylesheet" href="../../src/vender/css/vmodal.css">
+        
+        <!-- scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.2/jquery.modal.min.js" integrity="sha512-ztxZscxb55lKL+xmWGZEbBHekIzy+1qYKHGZTWZYH1GUwxy0hiA18lW6ORIMj4DHRgvmP/qGcvqwEyFFV7OYVQ==" crossorigin="anonymous"></script>
+    
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HN0VY8QLD1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date()); gtag('config', 'G-HN0VY8QLD1');
+        </script>
+    </head>
+    <!-- design by ProAlts -->
+	<body class="landing no-drag scroll-bar" onload="if ('ie' == browser.name) $('#browser_warning').modal('show');">
+        <!-- Browser warning-->
+        <div id="browser_warning" class="modal no-marker">
+            <p style="font-weight:bold;text-align: center;">브라우저 경고</p>
+            <ul>
+                <li>
+                    <p>이 브라우저는 대부분 콘텐츠가 누락될 있어요!</p>
+                </li>
+                <li>
+                    <p>모든 콘텐츠를 보려면 Chorme 또는 Safari, Firefox로 접속해 주세요!</p>
+                </li>
+            </ul>
+            
+            <ul class="actions fit small">
+                <li>
+                    <a class="button m1 fit small" rel="modal:close">음... 알겠습니다</a>
+                </li>
+            </ul>
+        </div>
+
+		<div id="page-wrapper">
+			<!-- Header -->
+            <header id="header">
+                <h1 id="logo"><a href="/#banner">Soju06</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a class="nav-f">Project [</a></li>
+                        <li>
+                            <input id="numc-tab-button" type="radio" name="tabs" checked="">
+                            <a href="/#numc" class="scrolly">NUMC</a>
+                        </li>
+                        <li><a class="nav-f">]</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+			<!-- Main -->
+            <div id="banner">
+                <div id="banner-background-box" class="background-video">
+                    <iframe id="banner-background-video" onload="setTimeout(() => document.getElementsByClassName('ytp-large-play-button ytp-button')[0]?.click(), 1000)" title="video" src="https://www.youtube.com/embed/ODiEy2ClWNw?start=16&vq=medium&autoplay=1&playlist=ODiEy2ClWNw&loop=1&mute=1&fs=0&color=white&controls=0&disablekb=1" width="100%" height="100%"></iframe>
+                </div>
+                <div class="content">
+                    <div style="min-height: 30%;height: 30%;"></div>
+                    <div class="inner-content">
+                        Numc
+                    </div>
+                </div>
+                <div id="bg" class="background-box"></div>
+            </div>
+            
+            <!-- Footer -->
+            <footer id="footer">
+                <!-- <ul class="icons">
+                    <li>
+                        <a href="https://github.com/Soju06" class="icon brands">
+                            <img src="https://github.com/rdimascio/icons/raw/master/icons/github.svg" alt="github" />
+                        </a>
+                    </li>
+                </ul> -->
+                <ul class="copyright">
+                    <li>
+                        <a href="https://blog.soju06.com/">Blog</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Soju06">GitHub</a>
+                    </li>
+                    <li>
+                        <a href="#credits" rel="modal:open">Credits</a>
+                    </li>
+                </ul>
+                <ul class="copyright">
+                    <li>
+                        Soju06
+                    </li>
+                </ul>
+            </footer>
+        </div>
+
+        <!-- Scripts -->
+        <script src="../../src/vender/js/jquery.scrolly.min.js" type="text/javascript"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.dropotron/1.4.3/jquery.dropotron.min.js" integrity="sha512-ugEhUBPC3XfTEBbRia5d9er1tFe5N4yzwQr3xrNSTfmT09xe0fwYxgfDSLwUKCnFoFtLd5rJBZP5tdfcUzLNvw==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.scrollex/0.2.1/jquery.scrollex.min.js" integrity="sha512-eFxuATJvNeUrxxoS/5AeVi6X4wY6IdI9kAtRbuGyD2XTLoJ/R9uBce9lsf2UyvY0tQYlUkbs1wV9jhOPxANCzg==" crossorigin="anonymous"></script>
+        <script src="../../src/vender/js/browser.min.js" type="text/javascript"></script>
+        <script src="../../src/vender/js/breakpoints.min.js" type="text/javascript"></script>
+        <script src="../../src/vender/js/vutils.min.js" type="text/javascript"></script>
+        <script src="../../src/vender/js/vmain.js" type="text/javascript"></script>
+        <script src="../project/api/numc-api.js" type="text/javascript"></script>
+        <script src="../../src/js/video-autoresize.js" type="text/javascript"></script>
+        <script src="main.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,9 +1,10 @@
 $('#title').css('opacity', '0');
 $('#banner_date')[0].innerHTML = new Date().getFullYear();
-$('#bg').css('background-image', "url(" + getRandomWallpaperUrl() + ")");
+// $('#bg').css('background-image', "url(" + getRandomWallpaperUrl() + ")");
 // 타이틀 글자 에니메이션 정보
-const titleAnimationInfos = [[ 'rgb(245,144,178)', 3500, 1000 ], [ 'rgb(255,255,255)', 4000, 500 ], [ 'rgb(236,63,121)', 4500, 0 ]];
+const titleAnimationInfos = [[ 'rgb(236,63,121)', 3500, 1000 ], [ 'rgb(255,255,255)', 4000, 500 ], [ 'rgb(245,144,178)', 4500, 0 ]];
 const startedDate = 2017;
+const bannerVideo = new VideoAutoResize(window, '#banner-background-video');
 //const titleAnimationInfos = [ [ 'rgb(255,255,255)', 3000, 2000 ], [ 'rgb(245,144,178)', 3500, 1000 ], [ 'rgb(255,255,255)', 4000, 500 ], [ 'rgb(236,63,121)', 4500, 0 ]];
 
 $(function() {

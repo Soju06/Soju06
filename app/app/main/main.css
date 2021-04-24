@@ -1,0 +1,37 @@
+#nav {
+    height: 90%;
+}
+
+#nav ul > li > a {
+    font-size: 27px !important;
+    font-weight: 700 !important;
+    color: #eaeaea !important;
+}
+
+#nav ul > li > input {
+    display: none;
+}
+
+#nav ul > li .nav-f {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #d4d4d4 !important;
+}
+
+.background-video {
+    background-color: #2e2e2e;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -99;
+    min-width: 100%;
+    min-height: 100%;
+    backface-visibility: hidden;
+}
+
+.background-video iframe {
+    filter: blur(20px) brightness(50%);
+}

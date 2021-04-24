@@ -1,3 +1,7 @@
+:root {
+    --modal-box-shadow: 0 0 10px #818181;
+}
+
 .blocker {
     position: fixed;
     top: 0;
@@ -43,11 +47,11 @@
     -o-border-radius: 8px;
     -ms-border-radius: 8px;
     border-radius: 8px;
-    -webkit-box-shadow: 0 0 10px #000;
-    -moz-box-shadow: 0 0 10px #000;
-    -o-box-shadow: 0 0 10px #000;
-    -ms-box-shadow: 0 0 10px #000;
-    box-shadow: 0 0 10px #000;
+    -webkit-box-shadow: var(--modal-box-shadow);
+    -moz-box-shadow: var(--modal-box-shadow);
+    -o-box-shadow: var(--modal-box-shadow);
+    -ms-box-shadow: var(--modal-box-shadow);
+    box-shadow: var(--modal-box-shadow);
     font-size: 19px;
     text-align: left;
 }
