@@ -2,6 +2,11 @@
 
   [![status](https://github-readme-stats.vercel.app/api?username=Soju06&show_icons=true&theme=dracula)](#)
 ***
+## Main Projects
+  
+  [![main-repos](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=NUMC&theme=dracula)](https://github.com/Soju06/NUMC)
+  [![main-repos](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=nekos&theme=dracula)](https://github.com/Soju06/nekos)
+  
 ## Csharp  
 
   [![main-repos-numc](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=NUMC&theme=dracula)](https://github.com/Soju06/NUMC)
