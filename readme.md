@@ -9,7 +9,7 @@
   
 ## Csharp  
 
-  [![main-repos-slime](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=Slime&theme=dracula)](https://github.com/Soju06/Slime)
+  [![main-repos-quickwaifu2x](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=QuickWaifu2x&theme=dracula)](https://github.com/Soju06/QuickWaifu2x)
   [![main-repos-waifu2x-ncnn-vulkan-gui](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=waifu2x-ncnn-vulkan-gui&theme=dracula)](https://github.com/Soju06/waifu2x-ncnn-vulkan-gui)
   [![main-repos-open-vpn-net](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=OpenVPN.Net&theme=dracula)](https://github.com/Soju06/OpenVPN.Net)
   [![main-repos-coinone-net](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=Coinone.Net&theme=dracula)](https://github.com/Soju06/Coinone.Net)
