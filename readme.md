@@ -25,7 +25,7 @@
 
 ## Network
   
-  [![tcp-aes-rsa-protocol](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=tcp-aes-rsa-protocol&theme=dracula)](https://github.com/Soju06/tcp-aes-rsa-protocol)
+  [![tcp-rsa-aes-protocol](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=tcp-aes-rsa-protocol&theme=dracula)](https://github.com/Soju06/tcp-rsa-aes-protocol)
   
 ***
   [![top-lang](https://github-readme-stats.vercel.app/api/top-langs/?username=Soju06&layout=compact&theme=dracula)](#)
