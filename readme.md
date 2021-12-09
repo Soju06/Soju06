@@ -6,6 +6,7 @@
   
   [![main-repos](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=NUMC&theme=dracula)](https://github.com/Soju06/NUMC)
   [![main-repos](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=nekos&theme=dracula)](https://github.com/Soju06/nekos)
+  [![main-repos](https://github-readme-stats.vercel.app/api/pin/?username=Soju06&repo=Input&theme=dracula)](https://github.com/Soju06/Input)
   
 ## Csharp  
 
