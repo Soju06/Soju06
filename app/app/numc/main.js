@@ -1,1 +1,0 @@
-const mainVideo = new VideoAutoResize(window, '#banner-background-video');
