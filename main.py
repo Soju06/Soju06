@@ -109,8 +109,10 @@ update_ignore(
                 [repo["stargazers"]["totalCount"] for repo in data["repositories"]["nodes"]]
             ),
             "total_commits": github.total_commits(),
-            "total_pull_requests": data["pullRequests"]["totalCount"],
-            "total_issues": data["issues"]["totalCount"],
+            "total_pull_requests": data["pullRequests"]["totalCount"]
+            + sum([repo["pullRequests"]["totalCount"] for repo in data["repositories"]["nodes"]]),
+            "total_issues": data["issues"]["totalCount"]
+            + sum([repo["issues"]["totalCount"] for repo in data["repositories"]["nodes"]]),
             "contributed_to": data["repositoriesContributedTo"]["totalCount"]
             + data["repositories"]["totalCount"],
         },
