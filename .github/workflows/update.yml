@@ -5,14 +5,22 @@ on:
   schedule:
     - cron: '0 9 * * *'
 jobs:
-  run:
+  update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-python@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Python
+        uses: actions/setup-python@v4
         with:
           python-version: '3.10'
-      - run: pip install -r requirements.txt
-      - run: python main.py
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run script
+        run: python main.py
         env:
           GITHUB_LOGIN: Soju06
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
