@@ -69,7 +69,7 @@ def update_ignore(
 ##########################
 data = github.graphql(
     """
-query {
+query ($githubLogin: String!) {
     viewer {
         repositoriesContributedTo(first: 1, contributionTypes: [COMMIT, ISSUE, PULL_REQUEST, REPOSITORY]) {
             totalCount
@@ -79,6 +79,17 @@ query {
         }
         issues(first: 1) {
             totalCount
+        }
+        repository(name: $githubLogin) {
+            defaultBranchRef {
+                target {
+                    ... on Commit {
+                        history(first: 0) {
+                            totalCount
+                        }
+                    }
+                }
+            }
         }
         repositories(first: 100, ownerAffiliations: [OWNER], orderBy: {direction: DESC, field: STARGAZERS}) {
             totalCount
@@ -96,7 +107,10 @@ query {
         }
     }
 }
-"""
+""",
+    variables={
+        "githubLogin": github.login,
+    },
 )["data"]["viewer"]
 
 update_ignore(
@@ -108,7 +122,8 @@ update_ignore(
             "total_stars": sum(
                 [repo["stargazers"]["totalCount"] for repo in data["repositories"]["nodes"]]
             ),
-            "total_commits": github.total_commits(),
+            "total_commits": github.total_commits()
+            - data["repository"]["defaultBranchRef"]["target"]["history"]["totalCount"],
             "total_pull_requests": data["pullRequests"]["totalCount"]
             + sum([repo["pullRequests"]["totalCount"] for repo in data["repositories"]["nodes"]]),
             "total_issues": data["issues"]["totalCount"]
