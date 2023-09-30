@@ -2,8 +2,8 @@ i dOn't kNow pEoplE liKe thAt
 
 ```
 ⭐  Total Stars:                          70
-➕  Total Commits:                     4,644
-🔀  Total PRs:                             8
-🚩  Total Issues:                         18
+➕  Total Commits:                     4,647
+🔀  Total PRs:                            12
+🚩  Total Issues:                         40
 📦  Contributed to:                       62
 ```
