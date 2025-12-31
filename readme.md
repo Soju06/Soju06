@@ -5,5 +5,5 @@ i dOn't kNow pEoplE liKe thAt
 ➕  Total Commits:                     7,084
 🔀  Total PRs:                           299
 🚩  Total Issues:                         83
-📦  Contributed to:                       76
+📦  Contributed to:                       75
 ```
